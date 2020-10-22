@@ -1,67 +1,78 @@
 <!DOCTYPE HTML>
 <html>
+
 <head>
-<meta charset'utf-8'>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title> Andrew Shaskin </title>
-<link rel='stylesheet' type='text/css' href='/indexstyle.css'>
-<link rel='stylesheet' type='text/css' href='https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css'>
+    <meta charset 'utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Andrew Shaskin </title>
+    <link rel='stylesheet' type='text/css' href='/indexstyle.css'>
+    <link rel='stylesheet' type='text/css' href='https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css'>
 </head>
 
 
 <body>
-       
-        <nav class="navbar shadow-lg p-2 mb-0 sticky-top navbar-dark bg-dark">
-                <a class="navbar-brand" href="#">Andrew Shaskin</a>
-                <ul>
-                    <a class="navbar-brand" href="#">Home</a>
-                    <a class="navbar-brand" href="#">Contact</a>
-                </ul>
-              </nav>
 
-              <div class="jumbotron jumbotron-fluid">
-                    <div class="container">
-                        <div class='container-fluid'>
-                      <h1 class="display-4">Welcome</h1>
-                      <p class="lead">Here you can find my projects I am currently working on and the best ways to contact me.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="alert alert-danger" role="alert">
-                        This website is currently under contruction and may appear unfinished.
-                      </div>
-<!---list begins here-->
-                    <div id='side-list'>
-                      <ul class="list-unstyled">
-                            <li class="media">
-                            <a href='www.discordapp.com' target='_blank'>
-                              <img src="Images\discordimg.jpg" class="mr-3" alt="discord" style='width:64px'></a>
-                              <div class="media-body">
-                                <h5 class="mt-0 mb-1">Discord</h5>
-                                <p>Join the community and feel free to chat, post questions or share you work.</p>
-                              </div>
-                            </li>
-                            <li class="media my-4">
-                            <a href='www.twitch.tv/shaskdev' target='_blank'>
-                              <img src="Images\twitch-512.png" class="mr-3" alt="twitch" style='width:64px'></a>
-                              <div class="media-body">
-                                <h5 class="mt-0 mb-1">Twitch</h5>
-                                <p>A link to my twitch channel.</p>                                
-                              </div>
-                            </li>
-                            <li class="media">
-                                <a href='www.github.com/shaskdev' target='_blank'>
-                                <img src="Images\Octicons-mark-github.svg" class="mr-3" alt="github" href='github.com/shaskdev' style='width:64px'></a>
-                                    <div class="media-body">
-                                    <h5 class="mt-0 mb-1">Github</h5>
-                                <p>Here you can find my Github repository.</p>
-                              </div>
-                            </li>
-                          </ul>
-                      </div>
+    <nav class="navbar shadow-lg p-2 mb-0 sticky-top navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Andrew Shaskin</a>
+        <ul>
+            <a class="navbar-brand" href="#">Home</a>
+            <a class="navbar-brand" href="#">Contact</a>
+        </ul>
+    </nav>
 
-    
- 
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class='container-fluid'>
+                <h1 class="display-4">Welcome</h1>
+                <p class="lead">Here you can find my projects I am currently working on and the best ways to contact me.</p>
+            </div>
+        </div>
+    </div>
+    <div class="alert alert-danger" role="alert">
+        This website is currently under contruction and may appear unfinished.
+    </div>
+    <!---list begins here-->
+    <div id='side-list'>
+        <ul class="list-unstyled">
+            <li class="media">
+                <a href='www.discordapp.com' target='_blank'>
+                    <img src="Images\discordimg.jpg" class="mr-3" alt="discord" style='width:64px'></a>
+                <div class="media-body">
+                    <h5 class="mt-0 mb-1">Discord</h5>
+                    <p>Join the community and feel free to chat, post questions or share you work.</p>
+                </div>
+            </li>
+            <li class="media my-4">
+                <a href='www.twitch.tv/shaskdev' target='_blank'>
+                    <img src="Images\twitch-512.png" class="mr-3" alt="twitch" style='width:64px'></a>
+                <div class="media-body">
+                    <h5 class="mt-0 mb-1">Twitch</h5>
+                    <p>A link to my twitch channel.</p>
+                </div>
+            </li>
+            <li class="media">
+                <a href='www.github.com/shaskdev' target='_blank'>
+                    <img src="Images\Octicons-mark-github.svg" class="mr-3" alt="github" href='github.com/shaskdev' style='width:64px'></a>
+                <div class="media-body">
+                    <h5 class="mt-0 mb-1">Github</h5>
+                    <p>Here you can find my Github repository.</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Add a placeholder for the Twitch embed -->
+    <div id="twitch-embed"></div>
+
+    <!-- Load the Twitch embed script -->
+    <script src="https://player.twitch.tv/js/embed/v1.js"></script>
+
+    <!-- Create a Twitch.Player object. This will render within the placeholder div -->
+    <script type="text/javascript">
+        new Twitch.Player("twitch-embed", {
+            channel: "sh4sk"
+        });
+    </script>
 
 
 
@@ -70,11 +81,13 @@
 
 
 
-<script src='https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js'></script>
-<script></script>
-<script></script>
-<script></script>
+
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js'></script>
+    <script></script>
+    <script></script>
+    <script></script>
 </body>
 <footer>
 </footer>
+
 </html>
